@@ -8,7 +8,7 @@
   * DB
     * MySQL
 
-#### テーブル構成
+### テーブル構成
 
 ##### mst_apps
 | Id | Name | ClientKey |
@@ -22,14 +22,14 @@
 | スコアID | アプリID | スコア種類 | プレイヤー名 | スコア |
 | integer | integer | integer | string | integer |
 
-#### API定義
+### API定義
 
 | URL | Method | Description |
 | -- | -- | -- |
 | ranking/scores | GET | ランキング情報取得 |
 | ranking/scores | POST | ランキング情報登録 |
 
-#### 使用方法
+### 使用方法
 
 * <a href=".env_rename_me">.env_rename_me</a>ファイルをコピーして.envファイルを作成します。
 * <code>docker compose up -d</code>を実行して localhost:8080 に対して各APIを実行します。
