@@ -24,10 +24,10 @@
 
 ### API定義
 
-| URL | Method | Description |
-| -- | -- | -- |
-| ranking/scores | GET | ランキング情報取得 |
-| ranking/scores | POST | ランキング情報登録 |
+| URL | Method | Description | Requests |
+| -- | -- | -- | -- |
+| ranking/scores | GET | ランキング情報取得 | app_id: アプリID<br>type: スコア種別<br>limit_count: 取得最大数<br>order_desc: 値降順で取得するか？ |
+| ranking/scores | POST | ランキング情報登録 | <a href="app/model/score_model.go">mst_appsのmodel定義</a>を参照 |
 
 ### 使用方法
 
