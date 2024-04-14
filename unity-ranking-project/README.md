@@ -1,6 +1,7 @@
 # unity-ranking-project
 * ランキング処理実行サンプル<br>
   * ランキングサーバのAPIをUnity側から実行するサンプルになります。
+  * API実行処理は <a href="Assets/Scripts/Ranking">Assets/Scripts/Ranking</a> 配下に定義してあります。
 <img width="808" alt="screenshot 2024-04-14 19 46 07" src="https://github.com/plasmo310/unity-go-ranking-sample/assets/77447256/d8832470-185f-4cec-a1f4-5f6ec979c5a9">
 
 ### Unityバージョン
