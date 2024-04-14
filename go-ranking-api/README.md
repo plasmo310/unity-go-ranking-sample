@@ -33,12 +33,12 @@
 
 * <a href=".env_rename_me">.env_rename_me</a>ファイルをコピーして.envファイルを作成します。
 * <code>docker compose up -d</code>を実行して localhost:8080 に対して各APIを実行します。
+  * 初回起動時は<code>mst_apps</code>のデータを挿入する必要があります。sqlフォルダ内の下記コマンドでサンプルデータのSQLをimportできます。
+     ```
+     sh sql/_db_data_import.sh
+     ```
   * デバッグ時など詳細なログを確認したい場合、<a href="/build/app/Dockerfile">Dockerfile</a>の<code>CMD ["go", "run", "main.go"]</code>をコメントアウトして、下記コマンドで直接実行できます。
      ```
      docker compose exec app go run main.go
      ```
-* sqlフォルダ内にデフォルトで挿入するレコードを定義しており、下記コマンドで対象SQLを選択してimportできます。
-  ```
-  sh sql/_db_data_import.sh
-  ```
   
